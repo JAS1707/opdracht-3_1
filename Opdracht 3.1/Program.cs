@@ -1,4 +1,12 @@
-﻿Console.WriteLine("Welkom bij Pokemon!");
+﻿Pikachu pikachu = new Pikachu();
+Charmander charmander = new Charmander();
+charmander.Geluid();
+charmander.VuurAanval(pikachu);
+pikachu.Geluid();
+Console.WriteLine($"Pikachu heeft nog {pikachu.levens} levens over.");
+
+Console.WriteLine("no code?");
+
 class Pokemon
 {
     public string naam;
@@ -20,6 +28,11 @@ class Charmander : Pokemon
             aanvalsPunten = 20;
             type = "Vuur";
             geluid = "Charmander!";
+        }
+        public void VuurAanval(Pokemon target)
+        {
+            Console.WriteLine($"{naam} spuugt vuur met {aanvalsPunten} aanvals punten!");
+            target.levens -= aanvalsPunten;
         }
     }
 
