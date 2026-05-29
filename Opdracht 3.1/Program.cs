@@ -1,4 +1,13 @@
-﻿class Pokemon
+﻿Pikachu pikachu = new Pikachu();
+Charmander charmander = new Charmander();
+charmander.Geluid();
+charmander.VuurAanval(pikachu);
+pikachu.Geluid();
+Console.WriteLine($"Pikachu heeft nog {pikachu.levens} levens over.");
+
+Console.WriteLine("no code?");
+
+class Pokemon
 {
     public string naam;
    public int levens  = 100;
