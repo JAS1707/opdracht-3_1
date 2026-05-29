@@ -1,4 +1,5 @@
-﻿class Pokemon
+﻿Console.WriteLine("Welkom bij Pokemon!");
+class Pokemon
 {
     public string naam;
    public int levens  = 100;
