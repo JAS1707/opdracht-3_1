@@ -31,4 +31,9 @@ class Pikachu : Pokemon
         type = "Elektriciteit";
         geluid = "Pika!";
     }
+    public void ElecAanval(Pokemon vijand, int pikaDmg)
+    {
+        Console.WriteLine($"Pikachu valt {vijand} aan met bliksem, voor {pikaDmg} schade!");
+        vijand.levens -= pikaDmg;
+    }
 }
