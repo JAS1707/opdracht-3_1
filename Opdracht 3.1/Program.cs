@@ -9,7 +9,7 @@ Console.WriteLine("no code?");
 
 class Pokemon
 {
-    public string naam;
+   public string naam;
    public int levens  = 100;
    public int aanvalsPunten;
    public string type;
