@@ -20,6 +20,11 @@ class Charmander : Pokemon
             type = "Vuur";
             geluid = "Charmander!";
         }
+        public void VuurAanval(Pokemon target)
+        {
+            Console.WriteLine($"{naam} spuugt vuur met {aanvalsPunten} aanvals punten!");
+            target.levens -= aanvalsPunten;
+        }
     }
 
 class Pikachu : Pokemon
